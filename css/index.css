@@ -1,0 +1,84 @@
+/* 公共部分 */
+
+.center-container{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+clearfix::before,
+clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* header设置 */
+.top-container{
+
+}
+
+.top-container>img{
+    float: left;
+    height: 60px;
+}
+
+.top-container .main-nav{
+    float: right;
+}
+
+.main-nav{
+    display: flex;
+}
+
+.main-nav li{
+    position: relative;
+    overflow: hidden;
+}
+
+.main-nav li a{
+    display: block;
+    width: 100px;
+    line-height: 60px;
+    color: #1a1a1a;
+    font-size: 14px;
+    text-align: center;
+    position: relative;
+    z-index: 999;
+}
+
+.main-nav li div{
+    position: absolute;
+    height: 60px;
+    width: 100px;
+
+    top: 56px;
+    transition: 0.5s;
+}
+
+
+.main-nav li:hover div{
+    top:0px;
+}
+
+.main-nav li:nth-child(1) div{
+    background-color: #ff9595;
+}
+
+.main-nav li:nth-child(2) div{
+   background-color:  #a8e957;
+}
+.main-nav li:nth-child(3)  div{
+   background-color: #8dcffb;
+}
+.main-nav li:nth-child(4)  div{
+   background-color: #ffcb96;
+}
+.main-nav li:nth-child(5)  div{
+   background-color: #86f5f0;
+}
+.main-nav li:nth-child(6)  div{
+   background-color: #ffc2d8;
+}
+.main-nav li:nth-child(7)  div{
+   background-color: #e4b6ff;
+}
